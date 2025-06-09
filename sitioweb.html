@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Web Policial</title>
+    <link rel="stylesheet" href="style5.css">
+    <script src="./scodigo.js"></script>
+</head>
+<body>
+    <header class="superior">
+        <div class="logo">Contenido</div>
+        <nav>
+      <a href="#">Inicio</a>
+      <a href="https://www.policiacordoba.gov.ar/Noticias/Index">Noticias</a>
+      <a href="#">Servicios</a>
+      <a href="#">Sobre Nosotros</a>
+      <a href="sitioweb.html">Contacto</a>
+    </nav>
+
+    </header>
+<div class="contenedor">
+
+    <img src="Entrega-de-moviles-8355.jpg" class="imagen">
+    <div class="izquierda">
+    
+        <p class="titulo1">Estamos Aca Para Protegerte</p>
+        <p class="subtitulo1">Nunca tengas miedo de denunciar un crimen</p>
+        <p class="subtitulo2">Nunca elijas arriesgar la vida de otro sobre vos</p>
+        <br>
+    </div>
+
+    <div class="usuario">
+        <p class="titulo2">Sufriste algun incidente?</p>
+        <p class="letramedia">Contactanos inmediatamente</p>
+        <p class="letramedia">ser victima de un delito no es juego</p>
+
+        <p>primero, inicia tus datos</p>
+        <form>
+            <strong>Nombre:
+            <input type="text"
+            placeholder="Aqui va su nombre"
+            name="nombre"
+            id="nombre"></strong>
+            <br><br>
+            
+            <select name="Tipo de Documento" id="selector" onclick="tipoDeDocumentos()">
+                <option value="">SELECCIONAR TIPO DE DOCUMENTO</option>
+                <option value="dni">Documento Nacional de Identidad</option>
+                <option value="visa">Pasaporte con tarjeta VISA</option>
+                <option value="novisa">Pasaporte sin tarjeta VISA</option>
+            </select>
+            <br><br>
+            <div id="mensaje"></div>
+            <strong>Numero De Documento:
+                <input type="number"
+                placeholder="Insertar documento"
+                name="dni"
+                id="Docu"></strong>
+                <br><br>
+                <strong>EDAD:
+                    <input type="number"
+                    placeholder="Su edad va aqui"
+                    name="edad"
+                    id="edad"></strong>
+                    <br><br>
+                    <strong>SEXO:   masculino:
+                        <input type="radio" name="sexo" value="masculino">femenino:
+                        <input type="radio" name="sexo" value="femenino">
+                    </strong>
+        </form>
+                        <br>
+                        <button id="Registrar" onclick="registrar()">REGISTRARSE</button>
+                        <br><br>
+        <br>
+    </div>
+
+</div>
+    <div class="abajo"></div>
+    
+</body>
+</html>

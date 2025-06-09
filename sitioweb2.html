@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sospechoso</title>
+    <link rel="stylesheet" href="style5.css">
+    <script src="scodigo.js"></script>
+</head>
+<body>
+    <header class="superior">
+        <div class="logo">Contenido</div>
+        <nav>
+      <a href="#">Inicio</a>
+      <a href="https://www.policiacordoba.gov.ar/Noticias/Index">Noticias</a>
+      <a href="#">Servicios</a>
+      <a href="#">Sobre Nosotros</a>
+      <a href="sitioweb.html">Contacto</a>
+    </nav>
+
+    </header>
+    <div class="bordes">
+    <div class="fondo2">
+        <h2 class="titulo3"> DATOS DEL CRIMINAL</h2>
+
+        <form>
+                <strong>  Fecha del Suceso:
+                    <input type="date" value="06/06/2025">
+                </strong>
+                    <br><br><br>
+                <strong>imagen del Sospechoso:</strong>
+                 <input type="file" id="inputImagen" accept="image/*">   
+                    <br><br><br>
+                    <strong>Nombre del Sospechoso(si lo sabe)</strong>
+                    <input type="text" id="nomsospechoso">
+                    <br><br><br>
+
+
+        </form>
+        <button onclick="enviarDatos()" >Enviar Reporte</button>
+        <p id="resultado" class="desaparecer"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    </div>
+    <div class="contabajo2">
+        <img src="Screenshot 2025-06-07 140219.png" class="abajo2">
+    </div>
+</body>
+</html>
